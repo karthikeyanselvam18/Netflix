@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="cont">
+      <img src="./logo.png" alt="" />
+      <div class="login-page">
+        <h1>Sign In</h1>
+        <div class="input-cont">
+          <div class="email-cont">
+            <input type="text" class="input-email" placeholder="" />
+            <span class="placeholder">Email</span>
+            <span class="email-error"
+              >Please enter a valid email address or phone number.</span
+            >
+          </div>
+          <div class="password-cont">
+            <input type="password" class="input-password" placeholder="" />
+            <span class="placeholder">Password</span>
+            <button class="password-visibilty">SHOW</button>
+            <span class="password-error"
+              >Your password must contain between 4 and 60 characters.
+            </span>
+          </div>
+          <button class="sign-up-button">Sign in</button>
+          <div class="login-help">
+            <div class="checkbox"><i class="fas fa-check"></i></div>
+            <p>Remember me</p>
+            <p id="help">Need help?</p>
+          </div>
+          <div class="new">
+            <p>New to Netflix?</p>
+            <p id="link">Sign up now.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
