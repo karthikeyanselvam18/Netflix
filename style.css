@@ -60,6 +60,7 @@ body {
   border-radius: 3px;
   padding-left: 20px;
   padding-top: 18px;
+  padding-right: 0px;
   font-size: 16px;
   color: white;
 }
@@ -128,6 +129,7 @@ input:not(:placeholder-shown) + .placeholder {
   width: 300px;
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .fa-check {
@@ -153,8 +155,10 @@ input:not(:placeholder-shown) + .placeholder {
   padding: 0;
 }
 
-#help {
-  text-indent: 110px;
+.help-message {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .new {

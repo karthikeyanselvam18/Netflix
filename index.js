@@ -38,20 +38,21 @@ password.addEventListener("input", function () {
 });
 
 let isHidden = true;
-passwordVisibilty.addEventListener("click", function () {
-  if (isHidden) {
-    isHidden = false;
-  } else {
-    isHidden = true;
-  }
+passwordVisibilty.addEventListener("mousedown", function (event) {
+  isHidden = !isHidden;
   password.type = isHidden ? "password" : "text";
   passwordVisibilty.innerHTML = isHidden ? "SHOW" : "HIDE";
+  event.preventDefault();
 });
 
-passwordCont.addEventListener("mouseover", function () {
+password.addEventListener("focus", function () {
   passwordVisibilty.style.display = "block";
 });
-passwordCont.addEventListener("mouseout", function () {
+
+password.addEventListener("blur", function () {
+  isHidden = true;
+  password.type = isHidden ? "password" : "text";
+  passwordVisibilty.innerHTML = isHidden ? "SHOW" : "HIDE";
   passwordVisibilty.style.display = "none";
 });
 
